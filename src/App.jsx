@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './common/ScrollToTop';
 import Navbar from './common/Navbar';
 import Footer from './component/Footer';
 import WhatsAppButton from './component/WhatsAppButton';
@@ -14,6 +15,7 @@ import Testimonials from './page/Testimonials';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-[#0D0D0D]">
         <Navbar />
         <Routes>
